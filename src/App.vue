@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader message="BoolFlix" />
 </template>
 
 <style lang="scss">
