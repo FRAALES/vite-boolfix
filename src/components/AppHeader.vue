@@ -11,6 +11,8 @@ export default {
         <h1 class="text-center my-5">
             {{ message }}
         </h1>
+        <input type="text" placeholder="Inserisci il titolo di un film">
+        <button>Cerca</button>
     </header>
 </template>
 
