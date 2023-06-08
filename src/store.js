@@ -1,7 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
-    apiURL: "https://api.themoviedb.org/3/search/movie?api_key=e99307154c6dfb0b4750f6603256716d&query=ritorno+al+futuro",
+    apiURL: "https://api.themoviedb.org/3/movie/550?api_key=f6d70c57a99673fd2b6ab960f6130c4a&query=ritorno+al+futuro",
     movieList: []
 });
 
