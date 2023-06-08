@@ -16,7 +16,8 @@ export default {
   },
   methods: {
     getMovies() {
-      axios.get(store.apiURL)
+      axios
+        .get(store.apiURL)
         .then(res => {
           store.movieList = res.data.original_title;
         })
@@ -33,6 +34,7 @@ export default {
 
 <template>
   <AppHeader message="BoolFlix" />
+  <movieList />
 </template>
 
 <style lang="scss">
