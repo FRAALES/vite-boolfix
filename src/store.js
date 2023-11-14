@@ -1,8 +1,25 @@
 import { reactive } from "vue";
 
 export const store = reactive({
-    apiURL: "https://api.themoviedb.org/3/movie/550?api_key=f6d70c57a99673fd2b6ab960f6130c4a&query=ritorno+al+futuro",
-    movieList: []
+  //Api per chiamare tutti i film
+  allFilmsApi: "https://api.themoviedb.org/3/search/movie",
+
+  //Api per chiamare tutte le serie tv
+  allSeriesApi: "https://api.themoviedb.org/3/search/tv",
+
+  //Chiave per far funzionare le API
+  myApiKey: "?api_key=82aa0260bc86c93d9e09ac808331317b&query=",
+
+  imgPrefix: "https://image.tmdb.org/t/p/w780/",
+
+  filmsList: [],
+
+  seriesList: [],
+
+  mixList: [],
+
+  isActive: false,
+
+  //Valore variabile associato al v-model del componente "searchBar.vue"
+  searchValue: "",
 });
-
-
